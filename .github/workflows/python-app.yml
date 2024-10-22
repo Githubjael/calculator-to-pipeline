@@ -66,16 +66,16 @@ jobs:
         path: coverage.xml
       if: ${{ failure() }}
 
-name: Deployment
+# name: Deployment
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  deployment:
-    runs-on: ubuntu-latest
-    environment: production
-    steps:
-      - name: deploy
+# jobs:
+#   deployment:
+#     runs-on: ubuntu-latest
+#     environment: production
+#     steps:
+#       - name: deploy
